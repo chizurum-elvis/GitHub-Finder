@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Github User Finder</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Github User Finder</h1>
+        <input type="text" name="" id="username" placeholder="Enter GitHub username" />
+        <button id="searchBtn">Search</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="repoModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModal">&times;</button>
+            <h2 id="repoName"></h2>
+            <p id="repoDesc"></p>
+            <p><strong>Stars:</strong> <span id="repoStars"></span></p>
+            <a href="#" id="repoLink" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
