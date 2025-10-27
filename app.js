@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const response = await fetch (`https://api.github.com/users/${username}/repos`);
             if (!response.ok) throw new Error("Could not fetch repositories");
             const repos = await response.json();
-            return repos.slice(0, 5); // Get top 5 repos
+            return repos.slice(0, 5);
         } catch (error) {
             console.error(error);
             return [];
@@ -123,7 +123,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     };
 
-    // resultDiv.textContent = "Loading...";
 
     const loader = document.createElement("div")
     loader.className = "loader";
